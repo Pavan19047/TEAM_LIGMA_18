@@ -1,0 +1,163 @@
+/*Header and nav properties*/
+header {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #4CAF50;
+    border-radius: 4px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.blog-catalog {
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    align-items: center; /* Centers the blog items */
+}
+
+.blog-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;  /* Increase the width for better layout */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.blog-info {
+    text-align: left;
+}
+
+.blog-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.blog-category {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/* Pagination styles */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.page-number {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #4CAF50;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.page-number:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.page-number.active {
+    background-color: #4CAF50;
+    color: white;
+}
+/*Footer and its properties*/
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    z-index: 1000;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
